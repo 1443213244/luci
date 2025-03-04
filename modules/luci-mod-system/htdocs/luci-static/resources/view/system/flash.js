@@ -206,7 +206,7 @@ return view.extend({
 			.then(L.bind(function(btn, res) {
 				/* sysupgrade opts table  [0]:checkbox element [1]:check condition [2]:args to pass */
 				var opts = {
-				    keep : [ E('input', { type: 'checkbox' }), false, '-n' ],
+				    keep : [ E('input', { type: 'checkbox', checked: false }), false, '-n' ],
 				    force : [ E('input', { type: 'checkbox' }), true, '--force' ],
 				    skip_orig : [ E('input', { type: 'checkbox' }), true, '-u' ],
 				    backup_pkgs : [ E('input', { type: 'checkbox' }), true, '-k' ],
